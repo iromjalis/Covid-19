@@ -1,0 +1,125 @@
+:root {
+  --main-text-color: #4b4f51;
+  --green-color: #035755;
+  --accent-color: #fb4c47;
+  --minor-accent-color: #fa5652;
+  --bg-accent-color: rgba(250, 86, 82, 0.15);
+}
+
+@font-face {
+  font-family: Gelion;
+  font-weight: 400;
+  font-style: normal;
+  src: url(../fonts/Gelion/Gelion-Regular.eot) format(embedded-opentype),
+    url(../fonts/Gelion/Gelion-Regular.svg) format(svg), url(../fonts/Gelion/Gelion-Regular.ttf) format(truetype),
+    url(../fonts/Gelion/Gelion-Regular.woff) format(woff);
+}
+@font-face {
+  font-family: Gelion;
+  font-weight: 500;
+  font-style: normal;
+  src: url(../fonts/Gelion/Gelion-Medium.eot) format(embedded-opentype),
+    url(../fonts/Gelion/Gelion-Medium.svg) format(svg), url(../fonts/Gelion/Gelion-Medium.ttf) format(truetype),
+    url(../fonts/Gelion/Gelion-Medium.woff) format(woff);
+}
+@font-face {
+  font-family: Gelion;
+  font-weight: 600;
+  font-style: normal;
+  src: url(../fonts/Gelion/Gelion-SemiBold.eot) format(embedded-opentype),
+    url(../fonts/Gelion/Gelion-SemiBold.svg) format(svg), url(../fonts/Gelion/Gelion-SemiBold.ttf) format(truetype),
+    url(../fonts/Gelion/Gelion-SemiBold.woff) format(woff);
+}
+@font-face {
+  font-family: Gelion;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/Gelion/Gelion-Bold.eot) format(embedded-opentype), url(../fonts/Gelion/Gelion-Bold.svg) format(svg),
+    url(../fonts/Gelion/Gelion-Bold.ttf) format(truetype), url(../fonts/Gelion/Gelion-Bold.woff) format(woff);
+}
+@font-face {
+  font-family: RedHatDisplay;
+  font-weight: 700;
+  font-style: normal;
+  src: url(../fonts/RedHatDisplay/RedHatDisplay-Bold.eot) format(embedded-opentype),
+    url(../fonts/RedHatDisplay/RedHatDisplay-Bold.svg) format(svg),
+    url(../fonts/RedHatDisplay/RedHatDisplay-Bold.ttf) format(truetype),
+    url(../fonts/RedHatDisplay/RedHatDisplay-Bold.woff) format(woff);
+}
+
+body {
+  font-family: Gelion, sans-serif;
+  font-size: 18px;
+  line-height: 2.15;
+  color: var(--main-text-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+/* h1 font-family: Red Hat Display, sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 1.22;
+
+color: --minor-accent-color; */
+
+/* h2 font-family: Red Hat Display, sans-serif;
+font-weight: 700;
+font-size: 29px;
+line-height: 1.24;
+
+color: var(--green-color); */
+
+/* h3 font-family: Gelion, sans-serif;
+font-weight: 500;
+font-size: 47px;
+line-height: 1.47;
+
+text-transform: capitalize;
+
+color: var(--green-color); */
+
+.hero-title {
+  font-family: Red Hat Display, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.22;
+  color: var(--minor-accent-color);
+}
+.section-title {
+  font-family: Red Hat Display, sans-serif;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 1.24;
+  color: var(--minor-accent-color);
+}
+.title-accent {
+  font-size: 50px;
+  color: var(--green-color);
+}
+.feedback-title {
+  font-family: Gelion;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 77px;
+  text-align: center;
+  color: var(--green-color);
+}
+
+.prevention-title {
+  font-family: Gelion;
+  font-weight: 500;
+  font-size: 47px;
+  line-height: 1.47;
+
+  text-transform: capitalize;
+
+  color: var(--green-color);
+}
