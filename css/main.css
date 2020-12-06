@@ -1,11 +1,10 @@
-
 @font-face {
-  font-family: 'Gelion';
-  src: url('../fonts/Gelion/Gelion-Regular.eot');
-  src: url('../fonts/Gelion/Gelion-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Gelion/Gelion-Regular.woff') format('woff'),
-      url('../fonts/Gelion/Gelion-Regular.ttf') format('truetype'),
-      url('../fonts/Gelion/Gelion-Regular.svg#Gelion-Regular') format('svg');
+  font-family: "Gelion";
+  src: url("../fonts/Gelion/Gelion-Regular.eot");
+  src: url("../fonts/Gelion/Gelion-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gelion/Gelion-Regular.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-Regular.ttf") format("truetype"),
+    url("../fonts/Gelion/Gelion-Regular.svg#Gelion-Regular") format("svg");
   font-weight: 400;
   font-style: normal;
 }
@@ -13,283 +12,282 @@
 @font-face {
   font-family: "Gelion";
   src: url("../fonts/Gelion/Gelion-SemiBold.eot");
-  src: url("../fonts/Gelion/Gelion-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-SemiBold.woff") format("woff"),
-    url("../fonts/Gelion/Gelion-SemiBold.ttf") format("truetype"), url("../fonts/Gelion/Gelion-SemiBold.svg#Gelion-SemiBold") format("svg");
+  src: url("../fonts/Gelion/Gelion-SemiBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gelion/Gelion-SemiBold.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-SemiBold.ttf") format("truetype"),
+    url("../fonts/Gelion/Gelion-SemiBold.svg#Gelion-SemiBold") format("svg");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "Gelion";
   src: url("../fonts/GelionGelion-Medium.eot");
-  src: url("../fonts/Gelion/Gelion-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-Medium.woff") format("woff"),
-    url("../fonts/Gelion/Gelion-Medium.ttf") format("truetype"), url("../fonts/Gelion/Gelion-Medium.svg#Gelion-Medium") format("svg");
+  src: url("../fonts/Gelion/Gelion-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gelion/Gelion-Medium.woff") format("woff"),
+    url("../fonts/Gelion/Gelion-Medium.ttf") format("truetype"),
+    url("../fonts/Gelion/Gelion-Medium.svg#Gelion-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "Gelion";
   src: url("../fonts/Gelion/Gelion-Bold.eot");
-  src: url("../fonts/Gelion/Gelion-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gelion/Gelion-Bold.woff") format("woff"), url("../fonts/Gelion/Gelion-Bold.ttf") format("truetype"),
+  src: url("../fonts/Gelion/Gelion-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gelion/Gelion-Bold.woff") format("woff"), url("../fonts/Gelion/Gelion-Bold.ttf") format("truetype"),
     url("../fonts/Gelion/Gelion-Bold.svg#Gelion-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Red Hat Display';
-  src: url('../fonts/RedHatDisplay/RedHatDisplay-Bold.eot');
-  src: url('../fonts/RedHatDisplay/RedHatDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/RedHatDisplay/RedHatDisplay-Bold.woff') format('woff'),
-      url('../fonts/RedHatDisplay/RedHatDisplay-Bold.ttf') format('truetype'),
-      url('../fonts/RedHatDisplay/RedHatDisplay-Bold.svg#RedHatDisplay-Bold') format('svg');
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay/RedHatDisplay-Bold.eot");
+  src: url("../fonts/RedHatDisplay/RedHatDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/RedHatDisplay/RedHatDisplay-Bold.woff") format("woff"),
+    url("../fonts/RedHatDisplay/RedHatDisplay-Bold.ttf") format("truetype"),
+    url("../fonts/RedHatDisplay/RedHatDisplay-Bold.svg#RedHatDisplay-Bold") format("svg");
   font-weight: 700;
   font-style: normal;
 }
 
 :root {
-  --main-text-color: #4b4f51;
+  --text-color: #4b4f51;
   --green-color: #035755;
-  --accent-color: #fb4c47;
-  --minor-accent-color: #fa5652;
-  --bg-accent-color: rgba(250, 86, 82, 0.15);
+  --header-btn-color: #ff383d;
+  --button-bg: #fb4c47;
+  --minor-button-color: #fa5652;
+  --minor-button-bg: rgba(250, 86, 82, 0.15);
 }
 
-html{
-  box-sizing: border-box;
-}
-
-*, *:after, *:before{
-  box-sizing: inherit;
-}
-
-img{
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-body {
-  font-family: Gelion, sans-serif;
-  font-size: 18px;
-  line-height: 2.15;
-  color: var(--main-text-color);
-}
-
+*,
+*::before,
+**::after,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-}
-
-.header{
-  padding-top: 35px;
-  padding-bottom: 35px;
-}
-
-.logo{
-  display: block;
-}
-
-.list{
+h4 {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  padding-block-end: 0px;
+  padding-block-start: 0px;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+img {
+  display: inline-block;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
   list-style: none;
 }
 
-.container{
-  width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
-  outline: 1px solid red;
-}
-
-.header-nav{
-  display: flex;
-  align-items: center;
-}
-
-.menu{
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.link{
+a {
   text-decoration: none;
 }
+.flex {
+  display: flex;
+}
 
-.menu-link{
+.container {
+  width: 1920px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
+  outline: 1px solid green;
+}
+
+body {
+  font-family: "Gelion", sans-serif;
+  font-style: 400;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 2.15;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: " Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 1.316;
+  text-transform: uppercase;
   color: var(--green-color);
+
+  display: inline-flex;
+  align-items: center;
 }
 
-.menu-link:hover, .menu-link:focus{
-  color: var(--accent-color);
-}
-
-.menu-item:not(:last-child){
-  margin-right: 45px;
-}
-
-.contact-button{
-  display: inline-block;
+.nav {
   font-family: "Gelion", sans-serif;
   font-weight: 500;
   font-size: 18px;
-  line-height: 1.222;
-  color: var(--accent-color);
-  border: 2px solid #FB4C47;
-  box-sizing: border-box;
-  border-radius: 46px;  
-  padding: 16px 45px 17px;
+  line-height: 1.22;
+  color: var(--header-btn-color);
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.link {
+  font-family: "Gelion", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  color: var(--green-color);
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.link.current {
+  color: var(--header-btn-color);
+}
+
+.button {
+  font-family: "Gelion", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  padding: 16px 45px;
+  background-color: transparent;
+  border: 2px solid #fb4c47;
+  border-radius: 46px;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-button {
+  color: var(--header-btn-color);
   margin-left: 40px;
 }
-/* h1 font-family: Red Hat Display, sans-serif;
-font-weight: 700;
-font-size: 32px;
-line-height: 1.22;
 
-color: --minor-accent-color; */
-
-/* h2 font-family: Red Hat Display, sans-serif;
-font-weight: 700;
-font-size: 29px;
-line-height: 1.24;
-
-color: var(--green-color); */
-
-/* h3 font-family: Gelion, sans-serif;
-font-weight: 500;
-font-size: 47px;
-line-height: 1.47;
-
-text-transform: capitalize;
-
-color: var(--green-color); */
+/*  HERO */
+.hero {
+  padding-top: 210px;
+  padding-bottom: 210px;
+  background-image: url(../img/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
 
 .hero-title {
-  font-family: Red Hat Display, sans-serif;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.22;
-  color: var(--minor-accent-color);
+  color: #fa5652;
+  max-width: 400px;
+  text-transform: capitalize;
 }
-.section-title {
-  font-family: Red Hat Display, sans-serif;
+.hero-text {
+  font-family: "Gelion", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.9;
+  color: var(--text-color);
+  text-transform: capitalize;
+  width: 37%;
+}
+
+.hero-button {
+  color: #fff;
+  background-color: #fb4c47;
+}
+
+/*  OVERVIEW */
+
+.overview-section {
+  display: inline-block;
+  max-width: 650px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 250px;
+}
+.overview-button {
+  color: #fa5652;
+  background: rgba(250, 86, 82, 0.15);
+}
+
+.title {
+  font-family: Red Hat Display;
   font-weight: 700;
   font-size: 29px;
   line-height: 1.24;
-  color: var(--minor-accent-color);
+  color: #fa5652;
+  text-align: center;
 }
-.title-accent {
-  font-size: 50px;
+.title > span {
   color: var(--green-color);
 }
-.feedback-title {
-  font-family: Gelion;
-  font-weight: 500;
-  font-size: 64px;
-  line-height: 77px;
-  text-align: center;
-  color: var(--green-color);
-}
-
-.prevention-title {
-  font-family: Gelion;
-  font-weight: 500;
-  font-size: 47px;
-  line-height: 1.47;
-
-  text-transform: capitalize;
-
-  color: var(--green-color);
-}
-
-/* === Contagion ===*/
-.contagion .section-title{
-  padding-top: 50px; 
-  margin-bottom: 31px;
-}
-
-.contagion-list{
-  display: flex;
-  flex-wrap: wrap;
-  width: auto;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
-.contagion-item{
-  background: #FFFFFF;
-  box-shadow: 0px 35px 87px rgba(0, 0, 0, 0.11);
-  border-radius: 10px;
-  width: 460px;
-  text-align: center;
-  margin-left: 30px;
-  margin-top: 30px;
-  height: 575px;
-  margin-bottom: 149px;
-}
-
-.contagion-item-title{
-  font-family: "Gelion";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 36px;
-  line-height: 1.47;
-  text-transform: capitalize;
-  color: #035755;
-  margin-top: 0;
-  margin-bottom: 13px;
-}
-
-.contagion-item-text{
-  font-family: Gelion;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.85;
-  text-align: center;
-  text-transform: capitalize;
-  color: #4B4F51;
-  margin-bottom: 111px;
-  margin-right: 52px;
-  margin-left: 52px;
-}
-
-.title-label{
-  display: block;
-  text-align: center;
-}
-
-.title-accent{
-  display: block;
-  text-align: center;
-}
-
-.title-text{
-  width: 570px;
+.section-text {
   font-family: Gelion;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 2.15;
-  text-align: center;
   text-transform: capitalize;
-  margin-left: auto;
-  margin-right: auto;
-  color: #4B4F51;
-  margin-top: 0;
-  margin-bottom: 111px;
+  color: #4b4f51;
 }
 
-.contagion-img{
-  margin: 65px 95px 55px;
-  width: 270px;
-  height: 250px;
-  outline: 1px solid red;
+.contagion-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contagion-item {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: calc(100% / 3 - 30px);
+  min-height: 575px;
+  background: #ffffff;
+  box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  padding-left: auto;
+  padding-right: auto;
+}
+.contagion-item:hover,
+.contagion-item:focus {
+  box-shadow: 0px 35px 87px rgba(250, 86, 82, 0.11);
+}
+.contagion-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.contagion .container {
+  text-align: center;
+}
+.contagion-title {
+  width: 100%;
+}
+.section-text {
+  width: 577px;
+  margin: 0 auto;
+  margin-bottom: 115px;
+}
+.contagion-text {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.symptoms {
+  text-align: center;
 }

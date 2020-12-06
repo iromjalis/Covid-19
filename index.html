@@ -2,153 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Covid-19</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
   <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
     <div class="container">
-      <nav class="header-nav">
-        <a class="logo" href="./"><img src="./img/Logo.svg" alt="Covid-19"></a>
-        <ul class="list menu">
-          <li class="item menu-item"><a href="#overview" class="link menu-link">Overview</a></li>
-          <li class="item menu-item"><a href="#contagion" class="link menu-link">Contagion</a></li>
-          <li class="item menu-item"><a href="#symptomps" class="link menu-link">Symptoms</a></li>
-          <li class="item menu-item"><a href="#prevention" class="link menu-link">Prevention</a></li>
+
+
+      <a href="./" class="logo">
+        <svg width="63" height="63">
+          <use href="./img/sprite.svg#icon-covid-svg"></use>
+        </svg>
+        Covid - 19
+      </a>
+      <nav class="nav flex">
+        <ul class="nav-list flex">
+          <li class="nav-item"><a href="#overview" class="current link">
+              Overview</a></li>
+          <li class="nav-item"><a href="#contagion" class="link">
+              Contagion</a></li>
+          <li class="nav-item"><a href="#symptoms" class="link">
+              Symptoms</a></li>
+          <li class="nav-item"><a href="#prevention" class="link">
+              Prevention</a></li>
         </ul>
-        <a href="#contacts" class="link contact-button">Contact</a>
+        <button type="button " class="header-button button">Contact</button>
       </nav>
     </div>
   </header>
 
-  <section>
+  <section class="hero">
     <div class="container">
-      <h1 class="hero-title">COVID-19 Alert Stay at Home quarantine To stop Corona virus</h1>
-      <p>
-        There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People may need supportive
-        care to .
-      </p>
-      <a href="#help">Let Us Help</a>
+      <h1 class="hero-title">
+        <pre>
+COVID-19 Alert
+Stay at Home quarantine
+To stop Corona virus</pre>
+      </h1>
+      <p class="hero-text">There is no specific medicine to prevent or treat coronavirus disease (COVID-19). People
+        may need supportive care to .</p>
+
+      <button type="button" class="hero-button button">Let Us Help</button>
     </div>
   </section>
-  <section id="overview">
+
+  <section id="overview" class="overview">
     <div class="container">
-      <h2 class="section-title">What Is Covid-19 <span class="title-accent">Coronavirus</span></h2>
-      <p>
-        Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified
-        type has caused a recent outbreak of respiratory illness now called COVID-19.Lauren Sauer, M.S., the director
-        of operations with the Johns Hopkins Office of Critical Event Preparedness and Response
-      </p>
-      <a href="">Learn More</a>
+      <img width="550" src="./img/overview/overview.jpg" alt="" class="overview-img">
+      <div class="overview-section">
+        <h2 class="title">
+          What Is Covid-19
+          <span>Coronavirus</span>
+        </h2>
+
+        <p>Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly
+          identified
+          type has caused a recent outbreak of respiratory illness now called COVID-19.Lauren Sauer, M.S., the director
+          of
+          operations with the Johns Hopkins Office of Critical Event Preparedness and Response</p>
+
+        <button type="button" class="button overview-button ">Learn More</button>
+      </div>
     </div>
   </section>
-  <section id="contagion">
+
+  <section class="contagion" id="contagion">
     <div class="container">
-      <h2 class="section-title"><span class="title-label">Covid-19</span>
-        <span class="title-accent">Contagion</span></h2>
-      <p class="title-text">Corona viruses are a type of virus. There are many different kinds, and some cause disease.
+      <h2 class="title">Covid-19
+        <span>Contagion</span></h2>
+      <p class="section-text">Corona viruses are a type of virus. There are many different kinds, and some cause
+        disease.
         A newly identified
         type</p>
-      <ul class="list contagion-list">
+      <ul class="contagion-list">
         <li class="contagion-item">
-          <img src="" alt="" width="270" height="250" class="contagion-img">
-          <h3 class="contagion-item-title">Air Transmission</h3>
-          <p class="contagion-item-text">Objectively evolve tactical expertise before extensible initiatives.
-            Efficiently simplify</p>
+          <img src="./img/contagion/contagion1.jpg" alt="">
+          <h3 class="contagion-title">Air Transmission</h3>
+          <p class="contagion-text">Objectively evolve tactical expertise before extensible initiatives. Efficiently
+            simplify</p>
         </li>
         <li class="contagion-item">
-          <img src="" alt="" width="270" height="250" class="contagion-img">
-          <h3 class="contagion-item-title">Human Contacts</h3>
-          <p class="contagion-item-text">Washing your hands is one of thesimplest ways you can protect</p>
+          <img src="./img/contagion/contagion2.jpg" alt="">
+          <h3 class="contagion-title">Human Contacts</h3>
+          <p class="contagion-text">Washing your hands is one of thesimplest ways you can protect</p>
+
         </li>
         <li class="contagion-item">
-          <img src="" alt="" width="270" height="250" class="contagion-img">
-          <h3 class="contagion-item-title">Containted Objects</h3>
-          <p class="contagion-item-text">Use the tissue while sneezing,In this way, you can protect your droplets.</p>
+          <img src="./img/contagion/contagion3.jpg" alt="">
+          <h3 class="contagion-title">Containted Objects</h3>
+          <p class="contagion-text">Use the tissue while sneezing,In this way, you can protect your droplets.</p>
+
         </li>
       </ul>
     </div>
+
   </section>
-  <section id="symptomps">
+
+  <section id="symptoms" class="symptoms">
     <div class="container">
-      <h2 class="section-title">Covid-19
-        <span class="title-accent">Symptomps</span></h2>
-      <p>Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified
-        type
-        has
-        caused a recent outbreak of respiratory</p>
-      <img src="./img/simptomy.svg" alt="симптомы" width="1167" height="871">
+      <h2 class="title">Covid-19
+        <span>Symptomps</span></h2>
+      <p class="section-text">Corona viruses are a type of virus. There are many different kinds, and some cause
+        disease. A newly identified type has caused a recent outbreak of respiratory </p>
+
+      <img src="./img/simptomy.svg" alt="">
+    </div>
   </section>
-</body>
-<section id="prevention">
-  <div class="container">
-    <h2 class="section-title">Covid-19
-      <span class="title-accent">What should we do</span></h2>
-    <p>Corona viruses are a type of virus. There are many different kinds, and some cause disease. A newly identified
-      type has
-      caused</p>
-    <ul>
-      <li>
-        <h3 class="prevention-title">wear masks</h3>
-        <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches
-          via fully
-          tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the
-          box"
-          thinking. Objectively</p>
-      </li>
-      <li>
-        <h3 class="prevention-title">Wash your hands</h3>
-        <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches
-          via fully
-          tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the
-          box"
-          thinking. Objectively Continually seize impactful vortals</p>
-      </li>
-      <li>
-        <h3 class="prevention-title">Use nose - rag</h3>
-        <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches
-          via fully
-          tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic "outside the
-          box"
-          thinking. Objectively</p>
-      </li>
-      <li>
-        <h3 class="prevention-title">Avoid contacts</h3>
-        <p>Continually seize impactful vortals rather than future-proof supply chains. Uniquely exploit emerging niches
-          via fully
-          tested meta-services. Competently pursue standards compliant leadership skills vis-a-vis pandemic</p>
-      </li>
-    </ul>
-  </div>
-</section>
-<section id="help">
-  <div class="container">
-    <h2 class="feedback-title">Have Question in mind?
-      Let us help you</h2>
-  </div>
-</section>
-<footer>
-  <div class="container">
-    <a href="./">Covid-19</a>
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#contagion">Contagion</a></li>
-      <li><a href="#symptomps">Symptomps</a></li>
-      <li><a href="#prevention">Prevention</a></li>
-    </ul>
-    <ul id="contacts">
-      <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer Nofollow">Facebook</a></li>
-      <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer Nofollow">Youtube</a></li>
-      <li><a href="https://vine.co/" target="_blank" rel="noopener noreferrer Nofollow">Vine</a></li>
-      <li><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer Nofollow">Twitter</a></li>
-    </ul>
-    <p>2020 &copy; All rights reserved by pixelspark.co</p>
-  </div>
-</footer>
 </body>
 
 </html>
