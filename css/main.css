@@ -76,6 +76,10 @@ h4 {
   padding-block-start: 0px;
 }
 
+a:hover{
+  color: #F44A45;
+}
+
 html {
   box-sizing: inherit;
 }
@@ -91,20 +95,26 @@ ul {
 }
 
 a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
   text-decoration: none;
+  transition: all 150ms linear 10ms;
+
 }
 .flex {
   display: flex;
 }
 
 .container {
-  width: 1920px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 
   outline: 1px solid green;
 }
+
 
 body {
   font-family: "Gelion", sans-serif;
@@ -129,6 +139,7 @@ body {
 
   display: inline-flex;
   align-items: center;
+  width: 100%;
 }
 
 .nav {
@@ -175,6 +186,11 @@ body {
 .header-button {
   color: var(--header-btn-color);
   margin-left: 40px;
+  transition: all 150ms linear 10ms;
+}
+.header-button:hover{
+  color: #fff;
+  background-color: #fb4c47;
 }
 
 /*  HERO */
@@ -208,20 +224,41 @@ body {
 .hero-button {
   color: #fff;
   background-color: #fb4c47;
+  transition: all 150ms linear 10ms;
+}
+.hero-button:hover{
+background-color: transparent;
+color: #fb4c47;
 }
 
 /*  OVERVIEW */
-
-.overview-section {
-  display: inline-block;
-  max-width: 650px;
+.overview{
   padding-top: 100px;
   padding-bottom: 100px;
+  max-height: 650px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-img{
+  display: inline-flex;
+  width: 40%;
+}
+.overview-section {
+  display: inline-block;
+  max-width: 50%;
   padding-left: 250px;
+  text-align: left;
+  padding-bottom: 55px;
+
 }
 .overview-button {
   color: #fa5652;
   background: rgba(250, 86, 82, 0.15);
+  transition: all 150ms linear 10ms;
+}
+.overview-button:hover{
+  background-color: #fff;
 }
 
 .title {
@@ -235,8 +272,18 @@ body {
 .title > span {
   color: var(--green-color);
 }
+.overview-text{
+  width: 650px;
+  height: 200px;
+  margin-bottom: 55px;
+  font-family: "Gelion";
+font-size: 20px;
+line-height: 2.15;
+text-transform: capitalize;
+color: #4B4F51;
+}
 .section-text {
-  font-family: Gelion;
+  font-family: "Gelion";
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -290,4 +337,86 @@ body {
 }
 .symptoms {
   text-align: center;
+}
+
+.advice-title{
+  font-family: "Gelion";
+font-weight: 500;
+font-size: 47px;
+line-height: 1.47;
+text-transform: capitalize;
+color: #035755;
+}
+
+.form{
+  position: relative;
+  text-align: center;
+
+}
+
+.form-input{
+  position: relative;
+  width: 790px;
+  max-height: 115px;
+  border-radius: 55px;
+  padding-left: 40px;
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+font-size: 22px;
+line-height: 1.18;
+color: #758681;
+}
+.form .hero-button{
+  position: absolute;
+  width: 209px;
+  height: 78px;
+  border-radius: 157px;
+  padding: 26px 81px;
+  right:17px;
+  top:-28px;
+  font-size: 22px;
+line-height: 1.1818;
+}
+.form-title{
+  max-width:661px;
+  font-weight: 500px;
+font-size: 64px;
+line-height: 77px;
+text-align: center;
+margin: 0 auto;
+color: #0C6C44;
+margin-bottom: 62px;
+}
+/* FOOTER */
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-item svg{
+  fill: #035755;
+  transition: all 150ms linear 10ms;
+
+}
+
+svg:hover{
+  fill: #F44A45;
+}
+.social-list{
+  margin-left: 220px;
+}
+.social-item{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.social-item:not(:last-child){
+  margin-right: 40px;
+}
+.copyright{
+  text-align: center;
+  font-size: 23px;
+line-height: 1.217;
+color: #415E56;
 }
