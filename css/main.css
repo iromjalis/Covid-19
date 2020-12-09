@@ -107,10 +107,11 @@ a {
 }
 
 .container {
-  width: 100%;
+  width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
 
   outline: 1px solid green;
 }
@@ -233,23 +234,20 @@ color: #fb4c47;
 
 /*  OVERVIEW */
 .overview{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  max-height: 650px;
-  display: flex;
-  justify-content: space-between;
+  padding-top: 250px;
+  padding-bottom: 130px;
+  background-image: url(../img/overview/overview.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
 }
+
 
 .overview-img{
   display: inline-flex;
   width: 40%;
 }
 .overview-section {
-  display: inline-block;
-  max-width: 50%;
-  padding-left: 250px;
-  text-align: left;
-  padding-bottom: 55px;
+  margin-left: 730px;
 
 }
 .overview-button {
@@ -320,6 +318,25 @@ color: #4B4F51;
   margin-right: 30px;
 }
 
+.contagion-item::before {
+  content: "";
+  display: block;
+  width: 270px;
+  height: 250px;
+  margin: 0 auto 60px;
+  background-position: center center;
+  background-size: contain;}
+
+  .contagion-item:nth-child(1)::before {
+    background-image: url(../img/contagion/contagion1.jpg);
+  }
+  .contagion-item:nth-child(2)::before {
+    background-image: url(../img/contagion/contagion2.jpg);
+  }
+  .contagion-item:nth-child(3)::before {
+    background-image: url(../img/contagion/contagion3.jpg);
+  }
+
 .contagion .container {
   text-align: center;
 }
@@ -339,6 +356,9 @@ color: #4B4F51;
   text-align: center;
 }
 
+.symptomps-img img {
+  margin: 0 auto;
+}
 .advice-title{
   font-family: "Gelion";
 font-weight: 500;
@@ -346,6 +366,54 @@ font-size: 47px;
 line-height: 1.47;
 text-transform: capitalize;
 color: #035755;
+}
+
+.prevention-container::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "Red Hat Display";
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 1.45;
+  text-transform: capitalize;
+  color: #fa5652;
+  width: 75px;
+  height: 75px;
+  counter-increment: item;
+  content: "0" counter(item);
+  border-radius: 50%;
+  background-color: rgba(250, 86, 82, 0.15);
+}
+
+..prevention-item:nth-child(even) .prevention-container {
+  margin-left: auto;
+}
+
+.prevention-item:nth-child(2n) {
+  background-position: left center;
+}
+
+.prevention-item:nth-child(1) {
+  background-image: url(../img/what-we-do/what-we-do1.png);
+}
+.prevention-item:nth-child(2) {
+  background-image: url(../img/what-we-do/what-we-do2.png);
+}
+.prevention-item:nth-child(3) {
+  background-image: url(../img/what-we-do/what-we-do3.png);
+}
+.prevention-item:nth-child(4) {
+  background-image: url(../img/what-we-do/what-we-do4.png);
 }
 
 .form{
