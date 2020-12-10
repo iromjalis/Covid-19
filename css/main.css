@@ -117,11 +117,16 @@ a {
 }
 
 .title {
-  font-family: Red Hat Display;
+  font-family: "Red Hat Display", sans-serif;
   font-weight: 700;
   font-size: 29px;
   line-height: 1.24;
   color: #fa5652;
+}
+
+.title > span {
+  color: var(--green-color);
+  font-size: 50px;
 }
 
 body {
@@ -244,11 +249,11 @@ color: #fb4c47;
 
 /*  OVERVIEW */
 .overview{
-  padding-top: 250px;
   padding-bottom: 130px;
   background-image: url(../img/overview/overview.jpg);
   background-repeat: no-repeat; 
-  background-position: -100px 0;
+  background-position: 0 -100px;
+  background-size: 700px;
 }
 
 .overview-img{
@@ -277,18 +282,16 @@ color: #fb4c47;
   text-align: left;
   max-width:288px;
 }
-.title > span {
-  color: var(--green-color);
-}
+
 .overview-text{
   width: 650px;
   height: 200px;
   margin-bottom: 55px;
   font-family: "Gelion";
-font-size: 20px;
-line-height: 2.15;
-text-transform: capitalize;
-color: #4B4F51;
+  font-size: 20px;
+  line-height: 2.15;
+  text-transform: capitalize;
+  color: #4B4F51;
 }
 .section-text {
   font-family: "Gelion";
@@ -298,10 +301,15 @@ color: #4B4F51;
   line-height: 2.15;
   text-transform: capitalize;
   color: #4b4f51;
+
+  width: 577px;
+  margin: 0 auto;
+  margin-bottom: 115px;
+
 }
 /* !CONTAGION*/
 .contagion .title{
-  width: 200px;
+  width: 250px;
   margin: 0 auto;
   margin-bottom: 24px;
 }
@@ -360,11 +368,7 @@ color: #4B4F51;
 .contagion-title {
   width: 100%;
 }
-.section-text {
-  width: 577px;
-  margin: 0 auto;
-  margin-bottom: 115px;
-}
+
 .contagion-text {
   padding-left: 50px;
   padding-right: 50px;
@@ -381,23 +385,36 @@ color: #4B4F51;
   margin: 0 auto;
 }
 
-.section-text{
-  width: 650px;
-}
 .symptoms .section-text{
   margin-bottom: 0;
 }
-.advice-title{
-  font-family: "Gelion";
-font-weight: 500;
-font-size: 47px;
-line-height: 1.47;
-text-transform: capitalize;
-color: #035755;
+
+/*  !PREVENCION*/
+
+.prevention{
+  position: relative;
+  padding-top: 150px;
+  text-align: center;
 }
 
-.prevention-container{
+.prevention-list {
+  counter-reset: item;
+}
+
+.prevention-item {
+
+  background-position: right center;
+  padding: 154px 0;
+  background-size: 470px;
+  background-repeat: no-repeat;
+  text-align: left;
+
+}
+
+.prevention-container {
   position: relative;
+  padding-left: 125px;
+  width: 50%;
 }
 
 .prevention-container::before {
@@ -425,9 +442,11 @@ color: #035755;
   content: "0" counter(item);
   border-radius: 50%;
   background-color: rgba(250, 86, 82, 0.15);
+
 }
 
-.prevention-item:nth-child(even) .prevention-container {
+
+.prevention-item:nth-child(even) .prevention-container{
   margin-left: auto;
 }
 
@@ -448,9 +467,26 @@ color: #035755;
   background-image: url(../img/what-we-do/what-we-do4.png);
 }
 
+.prevention-title{
+font-weight: 500;
+font-size: 47px;
+line-height: 1,47;
+text-transform: capitalize;
+color: #035755;
+}
+
+.prevention .section-text{
+  width: 650px;
+  margin-bottom: 0px;
+}
+.section-item-text{
+  margin: 0;
+}
+/* !FORM*/
 .form{
   position: relative;
   text-align: center;
+  margin-top: 150px;
 
 }
 
@@ -479,10 +515,10 @@ color: #758681;
 line-height: 1.1818;
 }
 .form-title{
-  max-width:661px;
+  max-width:670px;
   font-weight: 500px;
 font-size: 64px;
-line-height: 77px;
+line-height: 1.203;
 text-align: center;
 margin: 0 auto;
 color: #0C6C44;
